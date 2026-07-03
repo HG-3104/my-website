@@ -1,0 +1,97 @@
+body{
+  font-family: system-ui, sans-serif;
+  margin: 0 0 0 0;
+  padding: 50px; /*高さ*/
+  background-color: brown;
+  max-width: 2500px;
+}
+html{font-size: 20px;
+font-family: sans-serif;}
+img{opacity: 0.3;}
+*{box-sizing: border-box;}
+
+.main1{background-color: white;
+text-align: center;
+width: 1750px;
+}
+
+.kasaneru{position: relative;
+background-color: white;
+border: 1px solid black;
+justify-content: center;
+}
+.kasaneru img{width: 100%;} /*背景画像を横幅いっぱいに広げる設定*/
+
+.kasaneru h1{position: absolute;
+ top:50%;
+  left: 50%;
+ -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+  -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+  transform: translate(-50%,-50%);/*センター寄せの修正*/
+  color:red;
+  font-size: 70px;
+  margin: 0!important;/*文字がずれている場合や*/
+  padding: 0!important;/*文字が折り返される場合*/
+}
+h1{text-align: center;}
+
+.yamagotokizi{display: flex;}
+.yamabetukizi{background-color: yellow;
+width: 250px;
+flex-shrink: 0;
+font-size: 20px;
+border-collapse: collapse;}
+
+.yamabetukizi th{border: 1px solid black;
+padding: 20px;}
+
+.hidarinavi{display: flex;
+flex-direction: column; /*flex縦にする設定*/
+background-color: yellow;}
+
+
+h2{font-size: 30px;
+border-bottom: 3px solid black;
+margin: 50px 0 20px 10px;
+text-align: center;
+color: blue;}
+
+
+
+
+
+.itiran{display: flex;
+  margin: 0 0 0 10px ; /*margin:上 右 下 左*/
+}
+
+.allmountain{border-collapse: collapse; /*1列目*/
+}
+.allmountain th,.allmountain td{border: 1px solid black;
+padding: 20px;}
+
+
+.mountain{border-collapse: collapse; /*2列目*/
+margin: 0 0 0 50px;}
+.mountain th,.mountain td{border: 1px solid black;
+padding: 20px;}
+
+
+
+.yamayama{border-collapse: collapse; /*３列目*/
+margin: 0 0 0 50px;}
+.yamayama th,.yamayama td{border: 1px solid black;
+padding: 20px;}
+
+h3{border-bottom: 3px solid black;
+text-align: left;
+font-size: 30px;}
+
+
+
+
+
+
+
+
+
+
