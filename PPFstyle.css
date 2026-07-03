@@ -1,0 +1,91 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto 0 auto;
+  padding: 50px; /*高さ*/
+  max-width: 1000px;  /*画像の伸縮の上限の設定*/
+}
+html{font-size: 20px;
+font-family: sans-serif;
+}
+
+*{box-sizing: border-box;
+}
+
+/*p、li、td全体の文字のサイズの設定*/
+p,li,td{line-height: 1.7;
+}
+/*すべての<a>のリンクの文字の色*/
+a:link{
+  color: blue;
+  text-decoration: none;
+}
+/*すべての<a>のリンク先が訪問済みであるかどうか？？*/
+a:visited{
+  color: blue;
+  text-decoration: none;
+}
+
+/*すべての<a>のマウスポインタを文字にあてたときの下線部分の設定*/
+a:hover
+{
+  color: blue;
+  text-decoration: underline;
+}
+
+/*<a>の文字がマウスポインタで押されているとき*/
+a:active{
+  color: blue;
+  text-decoration: underline;
+}
+
+/*すべてのimgタグの画像が、親BOｘの幅に伸縮できるようにする設定*/
+img{max-width: 100%;}
+
+/*PDFの枠線の設定*/
+embed{border: 2px solid #0000;}
+
+/*上記は、全体にかかる基本設定。*/
+
+.code{color:red;}
+
+.search-form-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #777777;
+    border-radius: 25px;
+}
+
+.search-form-3 input {
+    width: 250px;
+    height: 45px;
+    padding: 5px 15px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-form-3 input::placeholder{
+    color: #777777;
+}
+
+.search-form-3 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-form-3 button::after {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z' fill='%23777777'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    content: '';
+}
